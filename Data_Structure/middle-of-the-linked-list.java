@@ -10,18 +10,16 @@
  */
 class Solution {
     public ListNode middleNode(ListNode head) {
-    // Write your solution here
-    if (head == null) {
-        return null;
+        if (head == null) {
+            return null;
+        }
+        ListNode fast = head;
+        ListNode slow = head;
+        
+        while (fast != null && fast.next != null) { // odd nodes && even nodes
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return slow;
     }
-    ListNode fast = head;
-    ListNode slow = head;
-    
-    while (fast != null && fast.next != null) { // 偶数个到头 && 奇数个到头
-			  // fast != null 先判断，如果为 false 则不会进行后面的判断，不会触发 NPE
-	      fast = fast.next.next;
-	      slow = slow.next;
-    }
-    return slow;
-  }
 }
