@@ -10,13 +10,13 @@
  */
 class Solution {
     public ListNode middleNode(ListNode head) {
-        if (head == null) {
-            return null;
-        }
+        if (head == null) return null;
         ListNode fast = head;
         ListNode slow = head;
-        
-        while (fast != null && fast.next != null) { // odd nodes && even nodes
+        // odd (2n + 1): slow -> n + 1 fast -> 2n+1 -> fast.next == null
+        // even (2n): slow -> n + 1 fast -> null -> fast == null
+        while (fast != null && fast.next != null ) { // even end && odd end
+            // check fast != null first to avoid NPE
             fast = fast.next.next;
             slow = slow.next;
         }
