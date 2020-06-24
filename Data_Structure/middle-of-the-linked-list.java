@@ -10,7 +10,9 @@
  */
 class Solution {
     public ListNode middleNode(ListNode head) {
-        if (head == null) return null;
+        if (head == null) {
+            return null;
+        }
         ListNode fast = head;
         ListNode slow = head;
         // odd (2n + 1): slow -> n + 1 fast -> 2n+1 -> fast.next == null

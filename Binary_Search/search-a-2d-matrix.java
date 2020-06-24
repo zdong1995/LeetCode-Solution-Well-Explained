@@ -7,7 +7,7 @@ class Solution {
         }
         int row = matrix.length, col = matrix[0].length;
         // left, right of 1D array -> left-up, right-down corner of 2D array
-        int left = 0, right = row*col - 1;
+        int left = 0, right = row * col - 1;
         // classical binary search
         while (left <= right) {
             int mid = left + (right - left) / 2;
