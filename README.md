@@ -5,6 +5,7 @@ Solutions for my LeetCode challenging and Java practice.
 
 | # | Title | Solution | Basic idea|
 |---| ----- | -------- | --------------------- |
+| merge-two-sorted-lists | [merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/merge-two-sorted-lists.java)| Maintain dummy head and tail to iteratively add smalled node to the end |
 | 74 | [search-a-2d-matrix](https://leetcode.com/problems/search-a-2d-matrix) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Binary_Search/search-a-2d-matrix.java)| 2D array to 1D array, Binary Search |
 | 102 | [binary-tree-level-order-traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/BFS/binary-tree-level-order-traversal.java)| BFS, use list to store value on each level |
 | 104 | [maximum-depth-of-binary-tree](https://leetcode.com/problems/maximum-depth-of-binary-tree) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Tree/maximum-depth-of-binary-tree.java)| Recursion |
