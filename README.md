@@ -8,10 +8,11 @@ Solutions for my LeetCode challenging and Java practice. Summarized to different
 | 21 | [merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/merge-two-sorted-lists.java)| Maintain dummy head and tail to iteratively add smalled node to the end |
 | 86 | [partition-list](https://leetcode.com/problems/partition-list) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/partition-list.java)| Maintain two Dummy head and tail for small and large list, then concatenate |
 | 141 | [linked-list-cycle](https://leetcode.com/problems/linked-list-cycle) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/linked-list-cycle.java)| Fast and slow pointer, cycle exists when two pointers meet |
+| 143 | [reorder-list](https://leetcode.com/problems/reorder-list) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/.reorder-listjava)| Find mid nodes -> Reverse second part -> Merge two parts |
 | 155 | [min-stack](https://leetcode.com/problems/min-stack) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/min-stack.java)| Auxiliary sync stack to store min, push min when num <= min |
 | 206 | [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/reverse-linked-list.java)| Iterative |
 | 876 | [middle-of-the-linked-list](https://leetcode.com/problems/middle-of-the-linked-list/) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/middle-of-the-linked-list.java)| Fast & Slow two pointers |
-| 958 | [check-completeness-of-a-binary-tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Tree/check-completeness-of-a-binary-tree.java)| BFS level order traversal, add one bool to indicate whether null found in the leftside |
+
 
 ## Binary Search
 
@@ -32,3 +33,4 @@ Solutions for my LeetCode challenging and Java practice. Summarized to different
 | # | Title | Solution | Basic idea|
 |---| ----- | -------- | --------------------- |
 | 102 | [binary-tree-level-order-traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/BFS/binary-tree-level-order-traversal.java)| BFS, use list to store value on each level |
+| 958 | [check-completeness-of-a-binary-tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree) | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Tree/check-completeness-of-a-binary-tree.java)| BFS level order traversal, add one bool to indicate whether null found in the leftside |
