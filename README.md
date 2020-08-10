@@ -6,6 +6,7 @@ Solutions for my LeetCode challenging and Java practice. Sorted in different top
 | # | Title | Topic | Solution | Basic idea| Difficulty |
 |---| ----- | ----- | -------- | --------------------- | ------ |
 | 21 | [merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists) | Data Structure | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/merge-two-sorted-lists.java)| Maintain dummy head and tail to iteratively add smalled node to the end | Easy |
+| 22 | [generate-parentheses](https://leetcode.com/problems/generate-parentheses) | DFS | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/DFS/generate-parentheses.java)| Check number of left / right parentheses before DFS. | Medium |
 | 24 | [swap-nodes-in-pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | Data Structure | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Strucure/swap-nodes-in-pairs.java)| Recursion rule `swapPair(head.next.next)` | Medium |
 | 45 | [jump-game-ii](https://leetcode.com/problems/jump-game-ii) | DP |[Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Dynamic_Programming/jump-game-ii.java)| Array to store the min jumps needed to reach end from i-th position | Hard |
 | 50 | [powx-n](https://leetcode.com/problems/powx-n) | Binary Search | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Binary_Search/powx-n.java)| Recursive `x^t = x^(t/2) * x^(t/2)` and be careful with `Interger.MIN_VALUE` | Medium |
