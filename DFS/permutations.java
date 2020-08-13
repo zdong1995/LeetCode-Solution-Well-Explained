@@ -17,10 +17,10 @@ class Solution {
         // swap the letter to index-th position -> nums[0, index] will be sorted
         // cur level: index = 1 -> 1 2 | 3
         for (int i = index; i < nums.length; i++) { // iterate all possible states
-            swap(nums, index, i);
-            curPath.add(nums[index]);
+            swap(nums, index, i); // make decision
+            curPath.add(nums[index]); // add selected number to curPath result
             helper(result, curPath, nums, index  + 1);
-            curPath.remove(curPath.size() - 1);
+            curPath.remove(curPath.size() - 1); // remove to recover state
             swap(nums, index, i); // swap back to recover the state
         }
     }
