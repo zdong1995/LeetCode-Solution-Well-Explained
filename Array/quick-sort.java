@@ -1,46 +1,47 @@
 class Solution {
-    public void sortIntegers2(int[] A) {
-        if (A == null || A.length < 2) {
-            return;
+    public int[] sortArray(int[] nums) {
+        if (nums == null || nums.length <= 1) {
+            return nums;
         }
-        quickSort(A, 0, A.length - 1);
+        quickSort(nums, 0, nums.length - 1);
+        return nums;
     }
     
-    private void quickSort(int[] A, int start, int end) {
+    private void quickSort(int[] nums, int start, int end) {
         // base case
         if (start >= end) { // avoid IndexOutOfBoundsException
             return;
         }
-        int pivot = partition(A, start, end);
-        quickSort(A, start, pivot - 1);
-        quickSort(A, pivot + 1, end);
+        int pivot = partition(nums, start, end);
+        quickSort(nums, start, pivot - 1);
+        quickSort(nums, pivot + 1, end);
     }
     
-    private int partition(int[] A, int start, int end) {
+    private int partition(int[] nums, int start, int end) {
         // pick one random pivot
         int pivot = start + (int) (Math.random() * (end - start + 1));
-        int tmp = A[pivot];
-        swap(A, pivot, end); // swap pivot to rightmost first
+        int tmp = nums[pivot];
+        swap(nums, pivot, end); // swap pivot to rightmost first
         // maintain two pointer to partition the array
         int left = start; // [start, left): < tmp (exclusive left)
         int right = end - 1; // (right, end]: >= tmp (exclusive right)
         while (left <= right) {
-            if (A[left] < tmp) {
+            if (nums[left] < tmp) {
                 left++;
-            } else if (A[right] >= tmp) {
+            } else if (nums[right] >= tmp) { //  find the fisrt avaiable index to swap left and right
                 right--;
-            } else { // A[left] >= tmp && A[right] < tmp
-                swap(A, left++, right--);
+            } else { // nums[left] >= tmp && nums[right] < tmp
+                swap(nums, left++, right--);
             }
         }
         // termination: left = right + 1
-        swap(A, left, end); // swap pivot back to the middle
+        swap(nums, left, end); // swap pivot back to the middle
         return left; // now the left will be the pivot index
     }
     
-    private void swap(int[] A, int left, int right) {
-        int tmp = A[left];
-        A[left] = A[right];
-        A[right] = tmp;
+    private void swap(int[] nums, int left, int right) {
+        int tmp = nums[left];
+        nums[left] = nums[right];
+        nums[right] = tmp;
     }
 }

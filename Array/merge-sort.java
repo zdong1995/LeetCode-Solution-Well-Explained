@@ -1,49 +1,47 @@
 class Solution {
-    public void sortIntegers2(int[] A) {
-        // write your code here
-        if (A == null || A.length <= 1) {
-            return;
+    public int[] sortArray(int[] nums) {
+        if (nums == null || nums.length < 2) {
+            return nums;
         }
-        
-        int[] tmp = new int[A.length];
-        mergeSort(A, 0, A.length - 1, tmp);
+        // allocate helper array to keep constant extra space
+        int[] helper = new int[nums.length];
+        mergeSort(nums, helper, 0, nums.length - 1);
+        return nums;
     }
     
-    private void mergeSort(int[] A, int left, int right, int[] tmp) {
+    private void mergeSort(int[] nums, int[] helper, int start, int end) {
         // base case
-        if (left >= right) {
+        if (start == end) {
             return;
         }
-        int mid = left + (right - left) / 2;
-        mergeSort(A, left, mid, tmp);
-        mergeSort(A, mid + 1, right, tmp);
-        merge(A, left, right, tmp);
+        int mid = start + (end - start) / 2;
+        mergeSort(nums, helper, start, mid);
+        mergeSort(nums, helper, mid + 1, end);
+        merge(nums, helper, mid, start, end);
     }
     
-    private void merge(int[] A, int left, int right, int[] tmp) {
-        int mid = left + (right - left) / 2;
-        int leftIndex = left;
-        int rightIndex = mid + 1;
-        int index = leftIndex;
-        
-        while (leftIndex <= mid && rightIndex <= right) {
-            if (A[leftIndex] < A[rightIndex]) {
-                tmp[index++] = A[leftIndex++];
+    private void merge(int[] nums, int[] helper, int mid, int start, int end) {
+        int left = start;
+        int right = mid + 1;
+        int index = start;
+        // iteratively copy smaller to helper array
+        while (left <= mid && right <= end) {
+            if (nums[left] < nums[right]) {
+                helper[index++] = nums[left++];
             } else {
-                tmp[index++] = A[rightIndex++];
+                helper[index++] = nums[right++];
             }
         }
-        
-        while (leftIndex <= mid) {
-            tmp[index++] = A[leftIndex++];
+        // post-processing
+        while (left <= mid) {
+            helper[index++] = nums[left++];
         }
-        
-        while (rightIndex <= right) {
-            tmp[index++] = A[rightIndex++];
+        while (right <= end) {
+            helper[index++] = nums[right++];
         }
-        
-        for (int i = left; i <= right; i++) {
-            A[i] = tmp[i];
+        // copy sorted array in helper to nums
+        for (int i = start; i <= end; i++) {
+            nums[i] = helper[i];
         }
     }
 }
