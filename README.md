@@ -5,7 +5,7 @@ Solutions for my LeetCode challenging and Java practice. Sorted in different top
 
 | # | Title | Topic | Solution | Basic idea| Difficulty |
 |---| ----- | ----- | -------- | --------------------- | ------ |
-| 1 | [two-sum](https://leetcode.com/problems/two-sum) | Array| [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Array/two-sum.java)| One pass hashtable /Two pointers | Easy |
+| 1 | [two-sum](https://leetcode.com/problems/two-sum) | Array| [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Array/two-sum.java)| One pass hashtable to check whether the complement in the map | Easy |
 | 21 | [merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists) | Data Structure | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/merge-two-sorted-lists.java)| Maintain dummy head and tail to iteratively add smalled node to the end | Easy |
 | 22 | [generate-parentheses](https://leetcode.com/problems/generate-parentheses) | DFS | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/DFS/generate-parentheses.java)| Check number of left / right parentheses before DFS. | Medium |
 | 24 | [swap-nodes-in-pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | Data Structure | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Strucure/swap-nodes-in-pairs.java)| Recursion rule `swapPair(head.next.next)` | Medium |
@@ -33,6 +33,7 @@ Solutions for my LeetCode challenging and Java practice. Sorted in different top
 | 141 | [linked-list-cycle](https://leetcode.com/problems/linked-list-cycle) | Data Structure | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/linked-list-cycle.java)| Fast and slow pointer, cycle exists when two pointers meet | Easy |
 | 143 | [reorder-list](https://leetcode.com/problems/reorder-list) | Data Structure | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/reorder-list.java)| Find mid nodes -> Reverse second part -> Merge two parts | Medium |
 | 155 | [min-stack](https://leetcode.com/problems/min-stack) | Data Structure | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/min-stack.java)| Auxiliary sync stack to store min, push min when num <= min | Easy |
+| 167 | [two-sum-ii-input-array-is-sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | Array| [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Array/two-sum-ii-input-array-is-sorted.java)| Two pointers from left and right | Easy |
 | 186 | [reverse-words-in-a-string-ii](https://leetcode.com/problems/reverse-words-in-a-string-ii) | String | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/String/reverse-words-in-a-string-ii.java)| 3-steps reverse: reverse all words, then reverse whole sentence | Medium |
 | 189 | [rotate-array](https://leetcode.com/problems/rotate-array) | Array| [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Array/rotate-array.java)| 3-steps reverse, first part ending at (length - 1 - steps). | Easy |
 | 191 | [number-of-1-bits](https://leetcode.com/problems/number-of-1-bits) | Other | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Other/number-of-1-bits.java)| Iteratively right shift and compare `n & 1` with 1 | Easy |
