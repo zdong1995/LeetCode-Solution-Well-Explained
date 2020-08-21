@@ -5,6 +5,7 @@ Solutions for my LeetCode challenging and Java practice. Sorted in different top
 
 | # | Title | Topic | Solution | Basic idea| Difficulty |
 |---| ----- | ----- | -------- | --------------------- | ------ |
+| 1 | [two-sum](https://leetcode.com/problems/two-sum) | Array| [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Array/two-sum.java)| One pass hashtable /Two pointers | Easy |
 | 21 | [merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists) | Data Structure | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Structure/merge-two-sorted-lists.java)| Maintain dummy head and tail to iteratively add smalled node to the end | Easy |
 | 22 | [generate-parentheses](https://leetcode.com/problems/generate-parentheses) | DFS | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/DFS/generate-parentheses.java)| Check number of left / right parentheses before DFS. | Medium |
 | 24 | [swap-nodes-in-pairs](https://leetcode.com/problems/swap-nodes-in-pairs) | Data Structure | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Data_Strucure/swap-nodes-in-pairs.java)| Recursion rule `swapPair(head.next.next)` | Medium |
