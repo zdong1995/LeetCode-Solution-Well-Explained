@@ -6,6 +6,7 @@ Solutions for my LeetCode challenging and Java practice. Sorted in different top
 | # | Title | Topic | Solution | Basic idea| Difficulty |
 |---| ----- | ----- | -------- | --------------------- | ------ |
 | 1 | [two-sum](https://leetcode.com/problems/two-sum) | Array| [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/Array/two-sum.java)| One pass hashtable to check whether the complement in the map | Easy |
+| 2 | [add-two-numbers](https://leetcode.com/problems/add-two-numbers) | LinkedList | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/LinkedList/add-two-numbers.java)| Two pointers to sum by digit, be careful with last non-zero carry after sum all digits | Medium |
 | 3 | [longest-substring-without-repeating-characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | String | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/String/longest-substring-without-repeating-characters.java)| Sliding window + HashTable counter to remove duplicates | Medium |
 | 15 | [3sum](https://leetcode.com/problems/3sum) | Two Pointers | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/TwoPointers/3sum.java)| For loop + Two Pointer to search for 2 Sum pair | Medium |
 | 19 | [remove-nth-node-from-end-of-list](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | LinkedList | [Java](https://github.com/zdong1995/CrackingAlgorithms/blob/master/LinkedList/remove-nth-node-from-end-of-list.java)| Two pointer to mainatain a gap with size = n | Medium |
