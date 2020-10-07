@@ -9,7 +9,7 @@ class Solution {
         int left = 1;
         int right = len - 1;
         // binary search to find the first position that
-        // nums[i] >= len - i and nums[i - 1] < nums[i]
+        // nums[i] >= len - i and nums[i - 1] < len - i
         while (left <= right) {
             int mid = left + (right - left) / 2;
             if (nums[mid] >= len - mid) {
