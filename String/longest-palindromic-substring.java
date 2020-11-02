@@ -1,7 +1,7 @@
 class Solution {
     public String longestPalindrome(String s) {
-        if (s == null || s.length() == 0) {
-            return null;
+        if (s == null || s.length() == 0) { // sanity check
+            return s;
         }
         
         int[] res = new int[2]; // [maxLen, startIndex]
