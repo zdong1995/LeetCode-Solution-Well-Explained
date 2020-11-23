@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 // solution 1: minHeap with size K -> O(K+(N-K)logK)
 class Solution {
     public int findKthLargest(int[] nums, int k) {
