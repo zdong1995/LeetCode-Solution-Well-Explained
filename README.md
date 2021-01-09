@@ -1,5 +1,11 @@
-# CrackingAlgorithms
-Solutions for my LeetCode challenging and Java practice. Sorted in different topics and add comments for easy understanding.
+# LeetCode-Solution-Well-Explained
+[![](https://img.shields.io/badge/LeetCode-Solution-gree?logo=leetcode)](https://github.com/zdong1995/LeetCode-Solution-Well-Explained) ![java](https://img.shields.io/badge/Language-Java-orange?logo=java)
+
+Solutions for my LeetCode using Java. Sorted in different topics and add detailed comments for easy understanding.
+
+Welcome to check my repository [Algorithm-Interview](https://github.com/zdong1995/Algorithm-Interview) to prepare for algorithm interview. This repo consists of beginer-friendly tutorial of Data Structure and Algorithm, summary of classified algorithm questions, and notes for Java and Object Oriented Design.
+
+If this is helpful for you, please feel free to add a star to the repo. Thank you! ❤️
 
 # Problems and Solutions
 
