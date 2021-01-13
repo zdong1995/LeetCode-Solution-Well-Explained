@@ -1,5 +1,7 @@
-// iterative
+// Iterative
 class Solution {
+    // Time: O(N)
+    // Space: O(1)
     public TreeNode searchBST(TreeNode root, int val) {
         if (root == null) {
             return root;
@@ -18,8 +20,10 @@ class Solution {
     }
 }
 
-// recursive
+// Recursive
 class Solution {
+    // Time: O(N)
+    // Space: O(height)
     public TreeNode searchBST(TreeNode root, int val) {
         if (root == null || root.val == val) { // base case
             return root;
