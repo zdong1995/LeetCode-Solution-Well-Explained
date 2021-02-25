@@ -1,9 +1,6 @@
 class Solution {
     public int longestConsecutive(int[] nums) {
-        if (nums == null || nums.length == 0) {
-            return 0;
-        }
-        int res = Integer.MIN_VALUE;
+        int res = 0;
         Set<Integer> set = Arrays.stream(nums).boxed().collect(Collectors.toSet()); // O(n)
         for (int num : nums) { // total O(n) -> every number will be removed once
             if (set.remove(num)) {
